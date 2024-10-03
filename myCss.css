@@ -1,3 +1,4 @@
+/* Селектори тегів */
 body, html {
 	height: 100%;
 	margin: 0;
@@ -5,22 +6,12 @@ body, html {
 	flex-direction: column;
 }
 
-/* Основні стилі для всього контенту сторінки */
 body {
 	font-family: Arial, sans-serif;
 }
 
 main {
 	flex: 1; /* Це дозволяє основному контенту займати всю доступну висоту */
-}
-
-/* Стилі для шапки */
-header {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	padding: 20px;
-	background-color: #f4f4f4;
 }
 
 nav ul {
@@ -43,6 +34,47 @@ nav ul li a {
 	margin: 0;
 }
 
+.search input {
+	padding: 10px;
+	border-radius: 5px;
+	border: 1px solid #ccc;
+}
+
+.hero h2, .hero h3 {
+	margin: 10px 0;
+}
+
+.news h2 {
+	text-align: center;
+}
+
+.news-item h3 {
+	margin: 10px 0;
+}
+
+.footer-content h3 {
+	margin-bottom: 10px;
+}
+
+.footer-content ul {
+	list-style: none;
+	padding: 0;
+}
+
+.footer-content ul li a {
+	color: white;
+	text-decoration: none;
+}
+
+/* Селектори класів */
+header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 20px;
+	background-color: #f4f4f4;
+}
+
 .cart-button .button {
 	background-color: #4CAF50;
 	color: white;
@@ -51,21 +83,10 @@ nav ul li a {
 	border-radius: 5px;
 }
 
-.search input {
-	padding: 10px;
-	border-radius: 5px;
-	border: 1px solid #ccc;
-}
-
-/* Стилі для секції hero */
 .hero {
 	text-align: center;
 	padding: 50px;
 	background-color: #fafafa;
-}
-
-.hero h2, .hero h3 {
-	margin: 10px 0;
 }
 
 .hero .button {
@@ -76,14 +97,9 @@ nav ul li a {
 	border-radius: 5px;
 }
 
-/* Сітка для новин */
 .news {
 	padding: 40px;
 	background-color: #f0f0f0;
-}
-
-.news h2 {
-	text-align: center;
 }
 
 .news-grid {
@@ -102,23 +118,6 @@ nav ul li a {
 	flex: 1;
 }
 
-.news-item img {
-	max-width: 100%;
-	height: auto;
-	border-radius: 5px;
-}
-
-.news-item h3 {
-	margin: 10px 0;
-}
-
-/* Стилі для футера */
-footer {
-	background-color: #333;
-	color: white;
-	padding: 20px;
-}
-
 .footer-content {
 	display: flex;
 	justify-content: space-between;
@@ -129,16 +128,15 @@ footer {
 	flex: 1;
 }
 
-.footer-content h3 {
-	margin-bottom: 10px;
-}
-
-.footer-content ul {
-	list-style: none;
-	padding: 0;
-}
-
-.footer-content ul li a {
+footer {
+	background-color: #333;
 	color: white;
-	text-decoration: none;
+	padding: 20px;
+}
+
+/* Інші селектори */
+.news-item img {
+	max-width: 100%;
+	height: auto;
+	border-radius: 5px;
 }
