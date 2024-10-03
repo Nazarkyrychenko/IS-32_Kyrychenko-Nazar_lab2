@@ -1,0 +1,1 @@
+# IS-32_Kyrychenko-Nazar_lab2
