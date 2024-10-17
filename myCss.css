@@ -1,13 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
 /* Tag selectors */
 body, html {
 	height: 100%;
 	margin: 0;
 	display: flex;
 	flex-direction: column;
+	background: linear-gradient(135ed, #e0eafc, #cfdef3);
+	font-family: 'Roboto', Arial, sans-serif; /* Шрифт */
 }
 
 body {
-	font-family: Arial, sans-serif;
+	font-family: 'Roboto', sans-serif; /* Шрифт */
 }
 
 main {
@@ -28,6 +31,11 @@ nav ul li {
 nav ul li a {
 	text-decoration: none;
 	color: #333;
+	transition: color 0.3s ease;
+}
+
+nav ul li a:hover{
+	color:#FF8C00
 }
 
 .logo h1 {
@@ -72,7 +80,8 @@ header {
 	justify-content: space-between;
 	align-items: center;
 	padding: 20px;
-	background-color: #f4f4f4;
+	background-color: #f4f4f4;  /* Background */
+	box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
 
 .cart-button .button {
@@ -80,7 +89,12 @@ header {
 	color: white;
 	padding: 10px 20px;
 	text-decoration: none;
-	border-radius: 5px;
+	border-radius: 5px;	
+	transition: 0.3s ease; 
+}
+
+.cart-button .button:hover{
+	background-color: #45a049;
 }
 
 .hero {
@@ -95,6 +109,11 @@ header {
 	padding: 15px 30px;
 	text-decoration: none;
 	border-radius: 5px;
+	transition: 0.3s ease;
+}
+
+.hero .button:hover {
+	background-color: #e67e22;
 }
 
 .news {
@@ -116,6 +135,23 @@ header {
 	border-radius: 5px;
 	box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 	flex: 1;
+	transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.news-item:hover {
+	transform: translate(-10px);
+	box-shadow: 0 4px 20px rgba(0,0,0,0.2)
+}
+
+.news-item img {
+		max-width: 100%;
+		height:  auto;
+		border-radius: 5px;
+		transition: transform 0.3s ease;
+}
+
+.news-item img:hover {
+	transform: scale(1.05);
 }
 
 .footer-content {
